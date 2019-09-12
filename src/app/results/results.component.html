@@ -1,0 +1,5 @@
+<p>{{circuitName}}</p>
+
+<ul *ngFor="let driver of drivers">
+  <li><p> Pos: {{driver.position}}<span [class.finished]="driver.status === 'Finished'"> {{driver.nombre}} {{driver.apellido}} {{driver.status}}</span></p></li>
+</ul>
